@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root {
     font-size: 62.5%;
 }
@@ -21,7 +22,7 @@ main {
     margin: 0 auto;
 }
 
-main > p:first-child {
+main > div > p:first-child {
     color: #7158ef;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -78,4 +79,30 @@ ul > li > span {
     letter-spacing: -2px;
 
     color: #090039;
+}
+
+@media (min-width: 700px) {
+    body { 
+        padding-top: 8rem;
+    }
+
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main > div {
+        max-width: 484px;
+    }
+
+    ul > li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
+
+    ul > li + li {
+        margin-top: 3.2rem;
+    }
 }
